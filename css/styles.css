@@ -1,0 +1,121 @@
+/* Ini CSS */
+
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reduce-margin {
+    margin-bottom: -10px;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.selection-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.selection-btn {
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+}
+
+.medium-btn {
+    width: 70px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.blue-bg {
+    background-color: #3084bc;
+    color:white;
+    font-size: 16px;
+    border: none;
+}
+
+.white-bg {
+    background-color: white;
+    color: #3084bc;
+    font-size: 16px;
+    border: none;
+}
+
+.orange-bg {
+    background-color: #eead4f;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+
+.luas-keliling-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background: #3084bc;
+    color: white;
+    text-align: center;
+}
+
+.luas-keliling-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.segitiga-img {
+    height: 250px;
+    width: 250px;
+    background-image: url(https://kartikasariyuni.wordpress.com/wp-content/uploads/2016/04/891d6-segitiga.jpg);
+    clip-path: inset(0px 25px 0px 0px);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.rumus {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.luas-keliling-form-header {
+    text-align: center;
+}
+
+.input-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-wrapper>input {
+    width: 65%
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.main-content>aside {
+    flex: 1;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
