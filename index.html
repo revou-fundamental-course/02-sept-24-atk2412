@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\css\styles.css">
+</head>
+
+<body>
+    <header class="p2 main-header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai Sobat, selamat datang di Katik :]</p>
+        <p>Sebuah web apps sederhana yang berfungsi untuk
+        menghitung nilai luas dan keliling bangun datar.</p>
+    </header>
+
+    <main>
+        <section class="p2 selection-content">
+            <button href="#" type="button" class="selection-btn blue-bg">Segitiga</button>
+            <button href="#" type="button" class="selection-btn white-bg">Jajar Genjang</button>
+        </section>
+
+        <!-- Left Content -->
+        <section class="p2 main-content">
+            <aside>
+                <header>
+                    <h1 class="p2 luas-keliling-header">Luas Segitiga</h1>
+                </header>
+
+                <article class="p2 luas-keliling-content">
+                    <div class="segitiga-img"></div>
+                    <p>Rumus Luas Segitiga:</p>
+                    <p class="rumus">L = 1/2 x a x t</p>
+                    <p class="reduce-margin">L = Luas</p>
+                    <p class="reduce-margin">a = Alas</p>
+                    <p>t = Tinggi</p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="luas-keliling-form-header">Hitung Luas Segitiga</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <input id="alas" type="number" placeholder="Nilai Alas"/>
+                    </div>
+                    <div class="input-wrapper">
+                        <input id="tinggi" type="number" placeholder="Nilai Tinggi"/>
+                    </div>
+
+                    <p id="result_luas"></p>
+                    
+                    <button onclick="validateLuas()" type="button" class="medium-btn blue-bg">Hitung</button>
+                    <input type="reset" value="Reset" class="medium-btn orange-bg">
+                </form>
+            </aside>
+
+            <aside>
+                <header>
+                    <h1 class="luas-keliling-header">Keliling Segitiga</h1>
+                </header>
+
+                <article class="luas-keliling-content">
+                    <div class="segitiga-img"></div>
+                    <p>Rumus Keliling Segitiga:</p>
+                    <p class="rumus">K = S1 + S2 + S3</p>
+                    <p class="reduce-margin">K = Keliling</p>
+                    <p class="reduce-margin">S1 = Sisi A</p>
+                    <p class="reduce-margin">S2 = Sisi B
+                    <p>S3 = Sisi C</p>
+                </article>
+
+                <hr />
+
+                <form>
+                    <header>
+                        <h1 class="luas-keliling-form-header">Hitung Keliling Segitiga</h1>
+                    </header>
+
+                    <div class="input-wrapper">
+                        <input id="sisi_1" type="number" placeholder="Nilai Sisi A"/>
+                    </div>
+                    <div class="input-wrapper">
+                        <input id="sisi_2" type="number" placeholder="Nilai Sisi B" />
+                    </div>
+                    <div class="input-wrapper">
+                        <input id="sisi_3" type="number" placeholder="Nilai Sisi C"/>
+                    </div>
+
+                    <p id="result_keliling"></p>
+
+                    <button onclick="validateKeliling()" type="button" class="medium-btn blue-bg">Hitung</button>
+                    <input type="reset" value="Reset" class="medium-btn orange-bg">
+                </form>
+            </aside>
+        </section>
+    </main>
+
+    <script src=".\js\script.js"></script>
+
+</body>
+</html>
